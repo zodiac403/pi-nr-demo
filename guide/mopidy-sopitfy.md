@@ -8,7 +8,17 @@
 ### Install Mopidy
 [Install](https://docs.mopidy.com/en/latest/installation/debian/) **mopidy** for Raspian. The **Mopidy Jessie** version is supposed to work for **Raspian Stretch**.
 
-## Install Soptify Plug In mopidy-spotify
+### Open HTTP Front Ends
+Open the HTTP end point for requests beyond loop back interface ([http documeentation](https://docs.mopidy.com/en/latest/ext/http/#confval-http/hostname)).
+
+~~~
+# mopidy.conf
+[http]
+enabled = true
+hostname = ::
+~~~
+
+### Install Soptify Plug In mopidy-spotify
 [Install](https://github.com/mopidy/mopidy-spotify#installation) **mopidy-spotify**.
 
 ~~~
